@@ -8,8 +8,8 @@
 	
 	
 	git branch <nombre_branch>
-	git branch 
-	git branch -a 
+	git branch 	// muestra ramas locales
+	git branch -a   // muestra ramas locales y remotos
 	
 	
 	git checkout <branch_existente>
