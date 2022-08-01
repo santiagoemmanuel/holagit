@@ -5,17 +5,20 @@
 	git add <file>	
 	git commit -m "<msje de commit>"
 	git commit -am "<msje de commit sin add>"
-	git commit --amend 
+	git commit --amend  //enmendar un commit anterior
+	
+	git remote show origin
+	git remote add  origin  https://urlrepo/user/holagit.git 
+	
 	
 	git branch <nombre_branch>
 	git branch 	// muestra ramas locales
-	git branch -a   // muestra ramas locales y remotos
-	
-	
-	git checkout <branch_existente>
+	git branch -a   // muestra ramas locales y remotos		
+	git checkout <branch_existente>	
 	git branch 
 	git show-branch
 	gitk
+	 
 	 
 	git restore --staged    // retira del staging 
 	git rm --cached <file>  // retira del staging
@@ -30,16 +33,16 @@
 	git diff <version1> <version1> <file>
 	git branch -D <branch name>  // borra la branch
 	
-	git reflog // muestra como ha muesto todo 
+	git reflog // muestra como ha muerto todo 
 	//buscar el hash 
+	
 	git reset head@{123}
 	git reset --hard <hash>
 	
 	git reset <version> --hard  // vuelve en el tiempo de manera agresiva
 	git reset <version> -- soft // vuelve pero guarda  lo que esta en stage para el next commit;
 	
-	git remote show origin
-	git remote add origin  https://urlrepo/user/holagit.git 
+	
 	
 	git push origin master // manda a remoto 
 	git pull origin master // trae de remoto
@@ -64,7 +67,7 @@
 	
 	
 
-git blame --help
+	git blame --help
 	
 
 
@@ -75,8 +78,6 @@ referencia:
 /* sobre la rama donde queremos traer algun comit de otra rama*/
 	git cherry-pick <hash-commit>
 
-
-	
 	
 	
 git stash : Guarda el trabajo actual de manera temporal. (Archivos modificados o eliminados)
