@@ -11,6 +11,8 @@
 	git remote show origin
 	git remote add  origin  https://urlrepo/user/holagit.git 
 	
+	git push --set-upstream <origin> <feature2> // push cuando branch no existe en remoto
+	
 	
 	git branch <nombre_branch>  // crea un nuevo branch 
 	git branch 					// muestra ramas locales
