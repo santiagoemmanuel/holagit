@@ -20,6 +20,8 @@
 	gitk
 	 
 	 
+	 esto es un nuevo cambio para feature2
+	 
 	git restore --staged    // retira del staging 
 	git rm --cached <file>  // retira del staging
 	git reset head 			// para mandar  todo a unstage
