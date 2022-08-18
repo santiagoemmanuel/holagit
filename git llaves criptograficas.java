@@ -5,17 +5,17 @@
 	git add <file>	
 	git commit -m "<msje de commit>"
 	git commit -am "<msje de commit sin add>"
-	git commit --amend  //enmendar un commit anterior
+	
+	git commit --amend  		//enmendar un commit anterior
 	
 	git remote show origin
 	git remote add  origin  https://urlrepo/user/holagit.git 
 	
 	
-	git branch <nombre_branch>
-	git branch 	// muestra ramas locales
-	git branch -a   // muestra ramas locales y remotos		
-	git checkout <branch_existente>	
-	git branch 
+	git branch <nombre_branch>  // crea un nuevo branch 
+	git branch 					// muestra ramas locales
+	git branch -a   			// muestra ramas locales y remotos		
+	git checkout <branch_existente>		
 	git show-branch
 	gitk
 	 
@@ -26,26 +26,26 @@
 	
 	git log
 	git diff
-	git stash // guarda en memoria
+	git stash 		// guarda en memoria
 	git stash list 
 	git stash pop
 	git stash drop 
 	git diff <version1> <version1> <file>
 	git branch -D <branch name>  // borra la branch
 	
-	git reflog // muestra como ha muerto todo 
-	//buscar el hash 
+	git reflog 		// muestra como ha muerto todo 
+					//buscar el hash 
 	
 	git reset head@{123}
 	git reset --hard <hash>
 	
-	git reset <version> --hard  // vuelve en el tiempo de manera agresiva
-	git reset <version> -- soft // vuelve pero guarda  lo que esta en stage para el next commit;
+	git reset <version> --hard  	// vuelve en el tiempo de manera agresiva
+	git reset <version> -- soft 	// vuelve pero guarda  lo que esta en stage para el next commit;
 	
 	
 	
-	git push origin master // manda a remoto 
-	git pull origin master // trae de remoto
+	git push origin master 	// manda a remoto 
+	git pull origin master 	// trae de remoto
 	git push --set-upstream origin cabecera // enlazad  remoto y local
 	
 	git pull origin master --allow-unrelated-histories // permite merge  de repos local y remoto
@@ -59,17 +59,15 @@
 /* creado llaves cripto para SSH */	
 
 	ssh-keygen -t rsa -b 4096 -C "youremail@example.com"  //gerera llave
-	eval $(ssh-agent -s)  // revisa si servicio de llaves esta iniciado 
-	ssh-add ~/.ssh/id_rsa // agrega al servicio de llaves tu nueva llave 
+	eval $(ssh-agent -s)  				// revisa si servicio de llaves esta iniciado 
+	ssh-add ~/.ssh/id_rsa 				// agrega al servicio de llaves tu nueva llave 
 	
 	agregar a git_remoto llave publica generada en seccion:
 	/usuario/settings/ssh and gpg/ssh keys 
-	
-	
+		
 
 	git blame --help
 	
-
 
 referencia: 
 	https://platzi.com/tutoriales/1557-git-github/4067-configurar-llaves-ssh-en-git-y-github/
