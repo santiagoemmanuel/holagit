@@ -102,3 +102,12 @@ Al aplicar un stash este no se elimina, es buena práctica eliminarlo.
 	
 	
 	
+//commit cambios locales a un branch nuevo para no afectar el branch principal --> branch feature or bug 
+
+git branch <feature_or_bug_branch>
+git stash 	// opcional, si te advirte que se perderar los cambios locales / se guradran en memoria temporal 
+git switch <feature_or_bug_branch>
+git stash pop 
+git add . 
+git commit 
+git push --set-upstream <origin> <feature_or_bug_branch>
